@@ -1,10 +1,13 @@
 package com.dataIntegration.Skyscraper;
 
-import org.springframework.stereotype.Component;
+import lombok.Builder;
+import lombok.Data;
 
-@Component
+@Builder
+@Data
 public class MyBean {
 
   Integer id;
   String name;
+
 }

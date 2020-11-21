@@ -1,7 +1,6 @@
 baeldung:
   api:
     path: '/camel'
-
 server:
   port: 8080
 camel:
