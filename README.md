@@ -5,7 +5,23 @@ SkyScraper - Apache Camel Data Transformation Integration Series - 2
 * Install Maven Dependency: brew install maven
 * Install Java 11
 * brew install kafka
-
+* zookeeper
+To have launchd start zookeeper now and restart at login:
+  `brew services start zookeeper`
+Or, if you don't want/need a background service you can just run:
+  `zkServer start`
+* kafka
+To have launchd start kafka now and restart at login:
+  `brew services start kafka`
+Or, if you don't want/need a background service you can just run:
+  `zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties & kafka-server-start /usr/local/etc/kafka/server.properties`
+* To start zookeper in Mac: 
+  `zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties`
+  
+* To start kafka in Mac: 
+  `kafka-server-start /usr/local/etc/kafka/server.properties`
+  
+  
 
 #Setup 
 * Run `mvn clean install` to install dependencies from pom.xml
