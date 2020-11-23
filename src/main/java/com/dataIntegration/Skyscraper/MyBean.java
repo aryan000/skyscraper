@@ -1,16 +1,20 @@
 package com.dataIntegration.Skyscraper;
 
 import java.io.Serializable;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
-@Builder
 @Data
-@EqualsAndHashCode
-public class MyBean implements Serializable {
+@NoArgsConstructor
+@AllArgsConstructor
+public class MyBean {
 
-  Integer id;
-  String name;
-
+  private Integer id;
+  private String name;
 }

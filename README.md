@@ -27,7 +27,7 @@ Or, if you don't want/need a background service you can just run:
 * Run `mvn clean install` to install dependencies from pom.xml
 * Run `mvn spring-boot:run` to start the application
 * Swagger Link : Swagger link : http://localhost:8080/camel/api-doc
-* Curl command to test Camel API: `curl -X POST http://localhost:8080/camel/api/bean -H 'Content-Type: application/json' -d '{id:1,name:World}'`
+* Curl command to test Camel API: `curl -X POST http://localhost:8090/camel/api/bean -H 'Content-Type: application/json' -d '{"id":1,"name":"World"}'`
 
 
 #Endpoints
